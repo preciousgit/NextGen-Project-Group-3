@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(135deg, #0d0d0d, #004d26); */
+  background: linear-gradient(to right, rgb(10, 26, 22), rgb(6, 8, 8), rgb(42, 105, 78));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  background: radial-gradient(circle, rgba(42, 105, 78, 0.8) 20%, rgba(7, 11, 11, 0.6) 50%, rgba(6, 10, 9, 0) 80%);
+  border-radius: 15px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.login-box{
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box p{
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.info-box{
+  flex: 1;
+  padding: 40px;
+  background: #42b17e;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.container-1 {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  background: radial-gradient(circle, rgba(42, 105, 78, 0.8) 20%, rgba(7, 11, 11, 0.6) 50%, rgba(6, 10, 9, 0) 80%);
+  border-radius: 15px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Add Scrollbar to login-box-1 */
+.login-box-1 {
+  flex: 1;
+  padding: 40px 40px 10px ;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 500px; /* Limit height */
+}
+
+.login-box-1 p{
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+/* Custom Scrollbar */
+.login-box-1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.login-box-1::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.login-box-1::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+  min-height: 5px;
+}
+
+.info-box-1 {
+  flex: 1;
+  padding: 40px;
+  background: #42b17e;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: white;
+}
+
+/* Password Field */
+.password-container {
+  position: relative;
+  width: 80%;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px; /* Space for eye icon */
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Eye Icon for Show/Hide Password */
+.eye-icon {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  background: #42b17e;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #42b17e;
+}
+
+.forgot-password {
+  text-align: right;
+  color: #ccc;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.create-account {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #00a65a;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: none;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: black;
+  color: white;
+}
